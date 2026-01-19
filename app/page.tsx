@@ -354,10 +354,7 @@ export default function Home() {
       {/* Pricing Section */}
       <section className="py-20 relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="glass-card gradient-border p-12 rounded-2xl relative overflow-hidden">
-            {/* Glow effect background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10"></div>
-
+          <div className="glass-card p-12 rounded-2xl relative overflow-hidden border border-orange-500/20">
             {/* Urgency badge */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
               <span className="inline-block px-6 py-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-sm font-bold rounded-full shadow-lg glow-pulse">
@@ -365,21 +362,21 @@ export default function Home() {
               </span>
             </div>
 
-            <div className="mb-2 mt-4 relative">
-              <span className="text-orange-300 text-sm font-semibold uppercase tracking-wider">
+            <div className="mb-2 mt-4 relative z-10">
+              <span className="text-orange-400 text-sm font-semibold uppercase tracking-wider">
                 Pilot Program
               </span>
             </div>
 
-            <div className="text-6xl md:text-7xl font-bold text-white mb-2 relative">
+            <div className="text-6xl md:text-7xl font-bold text-white mb-2 relative z-10">
               $5,000
             </div>
 
-            <p className="text-gray-500 line-through mb-8 relative">
+            <p className="text-gray-500 line-through mb-8 relative z-10">
               Regular: $15,000
             </p>
 
-            <div className="flex flex-wrap justify-center gap-6 mb-8 relative text-gray-300">
+            <div className="flex flex-wrap justify-center gap-6 mb-8 relative z-10 text-gray-300">
               <div>✓ 1-2 week delivery</div>
               <div>✓ No recurring fees</div>
               <div>✓ You own it</div>
@@ -390,12 +387,12 @@ export default function Home() {
               href="https://cal.com/arnaldodelisio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-10 py-5 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-bold text-lg rounded-lg neon-button relative"
+              className="inline-block px-10 py-5 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-bold text-lg rounded-lg neon-button relative z-10"
             >
               Claim Your Spot →
             </a>
 
-            <p className="text-sm text-gray-400 mt-6 relative">
+            <p className="text-sm text-gray-400 mt-6 relative z-10">
               🔥 2 companies already onboarded
             </p>
           </div>
