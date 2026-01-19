@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #2563eb;
+  --secondary: #10b981;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary: #3b82f6;
+    --secondary: #34d399;
+  }
+}
+
+body {
+  color: #1f2937;
+  background: #ffffff;
+}
+
+.rotating-word {
+  color: var(--primary);
+  font-weight: 700;
+}
