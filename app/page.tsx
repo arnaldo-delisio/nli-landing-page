@@ -34,7 +34,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-6xl mx-auto px-4 py-20 text-center relative overflow-hidden">
         {/* Badge */}
-        <div className="inline-block mb-6 px-5 py-2 glass-card rounded-full glow-pulse">
+        <div className="inline-block mb-6 px-5 py-2 glass-card rounded-full">
           <span className="gradient-text text-sm font-medium tracking-wide">
             Natural Language Business Intelligence
           </span>
@@ -107,7 +107,7 @@ export default function Home() {
           <div className="glass-card rounded-2xl overflow-hidden aspect-video relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10 flex items-center justify-center">
               <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 glow-pulse group-hover:scale-110 transition-transform cursor-pointer">
+                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform cursor-pointer shadow-lg">
                   <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
                   </svg>
@@ -524,7 +524,7 @@ function StepCard({
 }) {
   return (
     <div className="text-center group">
-      <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-400 text-white text-xl font-bold rounded-full mb-4 glow-pulse group-hover:scale-110 transition-transform">
+      <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-400 text-white text-xl font-bold rounded-full mb-4 group-hover:scale-110 transition-transform">
         {number}
       </div>
       <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>

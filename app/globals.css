@@ -39,16 +39,12 @@ body {
 /* Neon glow button */
 .neon-button {
   position: relative;
-  box-shadow: 0 0 20px rgba(249, 115, 22, 0.5),
-              0 0 40px rgba(249, 115, 22, 0.3),
-              inset 0 0 10px rgba(249, 115, 22, 0.2);
+  box-shadow: 0 4px 14px rgba(249, 115, 22, 0.3);
   transition: all 0.3s ease;
 }
 
 .neon-button:hover {
-  box-shadow: 0 0 30px rgba(249, 115, 22, 0.8),
-              0 0 60px rgba(249, 115, 22, 0.5),
-              inset 0 0 15px rgba(249, 115, 22, 0.3);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.4);
   transform: translateY(-2px);
 }
 
@@ -103,10 +99,10 @@ body {
 /* Glow pulse animation */
 @keyframes glow-pulse {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+    box-shadow: 0 2px 8px rgba(249, 115, 22, 0.2);
   }
   50% {
-    box-shadow: 0 0 40px rgba(249, 115, 22, 0.8), 0 0 60px rgba(251, 146, 60, 0.4);
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
   }
 }
 
