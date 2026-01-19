@@ -30,21 +30,21 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 py-20 text-center">
+      <section className="max-w-6xl mx-auto px-4 py-20 text-center relative overflow-hidden">
         {/* Badge */}
-        <div className="inline-block mb-6 px-5 py-2 bg-blue-50 border border-blue-200 rounded-full">
-          <span className="text-blue-600 text-sm font-medium tracking-wide uppercase">
+        <div className="inline-block mb-6 px-5 py-2 glass-card rounded-full glow-pulse">
+          <span className="gradient-text text-sm font-medium tracking-wide uppercase">
             Natural Language Business Intelligence
           </span>
         </div>
 
         {/* Main Headline with Rotating Word */}
-        <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
           Talk with your{" "}
           <span
-            className={`text-blue-600 transition-opacity duration-300 ${
+            className={`rotating-word transition-opacity duration-300 ${
               isVisible ? "opacity-100" : "opacity-0"
             }`}
           >
@@ -53,12 +53,12 @@ export default function Home() {
         </h1>
 
         {/* Subheadline */}
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-700">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300">
           Stop switching between tools. Start asking questions.
         </h2>
 
         {/* Description */}
-        <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-8">
+        <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
           Get instant answers from all your business systems through natural
           conversation—no dashboards, no SQL, no waiting.
         </p>
@@ -69,59 +69,76 @@ export default function Home() {
             href="https://cal.com/arnaldodelisio"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
+            className="px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button"
           >
             Book Your Discovery Call (30 min) →
           </a>
           <a
             href="#examples"
-            className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-colors"
+            className="px-8 py-4 glass-card text-white font-semibold rounded-lg border border-white/20 hover:border-orange-400/50 transition-all"
           >
             See Examples
           </a>
         </div>
 
         {/* Friction-reducing copy under CTA */}
-        <p className="text-sm text-gray-600">
+        <p className="text-sm text-gray-400">
           No commitment • Free consultation • See if NLI is right for you
         </p>
 
         {/* Trust signals under CTA */}
-        <div className="flex flex-wrap justify-center items-center gap-6 mt-8 text-sm text-gray-600">
-          <div className="flex items-center">
-            <span className="text-green-500 mr-2">🔒</span>
+        <div className="flex flex-wrap justify-center items-center gap-6 mt-8 text-sm text-gray-400">
+          <div className="flex items-center glass-card px-4 py-2 rounded-full">
+            <span className="text-green-400 mr-2">🔒</span>
             SOC 2 Compliant
           </div>
-          <div className="flex items-center">
-            <span className="text-green-500 mr-2">✓</span>
+          <div className="flex items-center glass-card px-4 py-2 rounded-full">
+            <span className="text-green-400 mr-2">✓</span>
             GDPR Ready
           </div>
-          <div className="flex items-center">
-            <span className="text-green-500 mr-2">🛡️</span>
+          <div className="flex items-center glass-card px-4 py-2 rounded-full">
+            <span className="text-green-400 mr-2">🛡️</span>
             Your infrastructure
           </div>
-          <div className="flex items-center">
-            <span className="text-green-500 mr-2">🔐</span>
+          <div className="flex items-center glass-card px-4 py-2 rounded-full">
+            <span className="text-green-400 mr-2">🔐</span>
             End-to-end encryption
+          </div>
+        </div>
+
+        {/* Demo Video Placeholder */}
+        <div className="max-w-4xl mx-auto mt-12">
+          <div className="glass-card rounded-2xl overflow-hidden aspect-video relative group">
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10 flex items-center justify-center">
+              <div className="text-center">
+                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 glow-pulse group-hover:scale-110 transition-transform cursor-pointer">
+                  <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                  </svg>
+                </div>
+                <p className="text-gray-400 text-lg font-medium">Watch 90-second demo</p>
+                <p className="text-gray-500 text-sm mt-2">See NLI in action</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Trust Bar - Social Proof */}
-      <section className="py-8 border-y border-gray-200 bg-white">
+      <section className="py-8 border-y border-white/10">
         <div className="max-w-6xl mx-auto px-4">
           <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-wide">
             Trusted by forward-thinking operators
           </p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <div className="text-gray-600 font-semibold text-lg">
+            <div className="text-gray-300 font-semibold text-lg">
               Early-stage pilot companies
             </div>
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-2 text-gray-300">
               <span className="text-2xl">⚡</span>
               <span className="font-medium">Fast implementation</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-600">
+            <div className="flex items-center gap-2 text-gray-300">
               <span className="text-2xl">🔒</span>
               <span className="font-medium">Secure by design</span>
             </div>
@@ -130,49 +147,49 @@ export default function Home() {
       </section>
 
       {/* The Problem Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="py-16 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
             The Problem
           </h2>
 
           <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg text-gray-300 mb-6">
               Your business data is scattered across:
             </p>
 
-            <ul className="space-y-2 mb-8 text-gray-700">
+            <ul className="space-y-2 mb-8 text-gray-300">
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-orange-400 mr-2">•</span>
                 Stripe (payments & revenue)
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-orange-400 mr-2">•</span>
                 Salesforce/HubSpot (CRM & deals)
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-orange-400 mr-2">•</span>
                 Shopify/databases (products & orders)
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-orange-400 mr-2">•</span>
                 Google Analytics (traffic & behavior)
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-orange-400 mr-2">•</span>
                 Notion/Airtable (operations)
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-2">•</span>
+                <span className="text-orange-400 mr-2">•</span>
                 Spreadsheets (everything else)
               </li>
             </ul>
 
-            <div className="bg-white p-6 rounded-lg border border-gray-200 mb-6">
-              <p className="text-gray-700 mb-4">
+            <div className="glass-card p-6 rounded-lg mb-6">
+              <p className="text-gray-300 mb-4">
                 Every time you need an answer, you:
               </p>
-              <ol className="space-y-2 text-gray-700">
+              <ol className="space-y-2 text-gray-300">
                 <li>1. Open 3-5 different tools</li>
                 <li>2. Export data to spreadsheets</li>
                 <li>3. Manually combine and analyze</li>
@@ -180,10 +197,10 @@ export default function Home() {
               </ol>
             </div>
 
-            <p className="text-lg text-gray-700 mb-2">
-              You do this <strong>10-20 times per day</strong>.
+            <p className="text-lg text-gray-300 mb-2">
+              You do this <strong className="text-white">10-20 times per day</strong>.
             </p>
-            <p className="text-2xl font-bold text-gray-900">
+            <p className="text-2xl font-bold gradient-text">
               That's 3-5 hours wasted. Every single day.
             </p>
           </div>
@@ -191,46 +208,46 @@ export default function Home() {
       </section>
 
       {/* The Solution Section */}
-      <section className="py-16">
+      <section className="py-16 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-white">
             The Solution
           </h2>
-          <p className="text-xl text-center text-gray-700 mb-8">
+          <p className="text-xl text-center text-gray-300 mb-12">
             Natural Language Intelligence for your business.
           </p>
 
           <div className="max-w-3xl mx-auto text-center">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="p-6 bg-gray-50 rounded-lg">
+              <div className="glass-card p-6 rounded-xl bento-card">
                 <div className="text-4xl mb-4">🔗</div>
-                <p className="text-gray-700">
+                <p className="text-gray-300">
                   We connect Claude Desktop to all your systems.
                 </p>
               </div>
-              <div className="p-6 bg-gray-50 rounded-lg">
+              <div className="glass-card p-6 rounded-xl bento-card">
                 <div className="text-4xl mb-4">💬</div>
-                <p className="text-gray-700">
+                <p className="text-gray-300">
                   You ask questions in plain English.
                 </p>
               </div>
-              <div className="p-6 bg-gray-50 rounded-lg">
+              <div className="glass-card p-6 rounded-xl bento-card">
                 <div className="text-4xl mb-4">⚡</div>
-                <p className="text-gray-700">You get instant answers.</p>
+                <p className="text-gray-300">You get instant answers.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Examples Section */}
-      <section id="examples" className="bg-gray-50 py-16">
+      {/* Examples Section - Bento Grid */}
+      <section id="examples" className="py-16 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">
-            Examples
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
+            Ask Anything
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <ExampleCard
               title="Sales Intelligence"
               examples={[
@@ -268,9 +285,9 @@ export default function Home() {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16">
+      <section className="py-16 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
             How It Works
           </h2>
 
@@ -300,9 +317,9 @@ export default function Home() {
       </section>
 
       {/* What You Get Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="py-16 relative">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
             What You Get
           </h2>
 
@@ -318,40 +335,43 @@ export default function Home() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16">
+      <section className="py-16 relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
             Pilot Program
           </h2>
 
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-2 border-blue-200 mb-8 relative">
+          <div className="glass-card gradient-border p-8 rounded-2xl mb-8 relative overflow-hidden">
+            {/* Glow effect background */}
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10"></div>
+
             {/* Urgency badge */}
-            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-              <span className="inline-block px-6 py-2 bg-red-500 text-white text-sm font-bold rounded-full shadow-lg">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
+              <span className="inline-block px-6 py-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-sm font-bold rounded-full shadow-lg glow-pulse">
                 ⚡ Only 3 spots remaining
               </span>
             </div>
 
-            <div className="mb-4 mt-4">
-              <span className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-full mb-4">
+            <div className="mb-4 mt-4 relative">
+              <span className="inline-block px-4 py-2 glass-card text-orange-300 text-sm font-semibold rounded-full mb-4">
                 Pilot Program (First 5 Clients)
               </span>
             </div>
 
-            <div className="text-5xl font-bold text-gray-900 mb-4">
+            <div className="text-5xl md:text-6xl font-bold text-white mb-4 relative">
               $5,000
-              <span className="text-2xl font-normal text-gray-600">
+              <span className="text-2xl font-normal text-gray-400">
                 {" "}
                 one-time
               </span>
             </div>
 
             {/* Add value comparison */}
-            <p className="text-sm text-gray-600 line-through mb-2">
+            <p className="text-sm text-gray-500 line-through mb-6 relative">
               Regular price: $15,000
             </p>
 
-            <p className="text-lg text-gray-700 mb-6">
+            <p className="text-lg text-gray-300 mb-8 relative">
               ✓ Delivered in 1-2 weeks
               <br />
               ✓ No recurring costs
@@ -364,12 +384,12 @@ export default function Home() {
               href="https://cal.com/arnaldodelisio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button relative"
             >
               Claim Your Spot →
             </a>
 
-            <p className="text-xs text-gray-600 mt-4">
+            <p className="text-xs text-gray-400 mt-4 relative">
               🔥 2 pilot clients already onboarded
             </p>
           </div>
@@ -377,17 +397,17 @@ export default function Home() {
       </section>
 
       {/* Who This Is For Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="py-16 relative">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
             Who This Is For
           </h2>
 
-          <div className="bg-white p-8 rounded-lg border border-gray-200 mb-8">
-            <h3 className="text-xl font-semibold mb-4 text-gray-900">
+          <div className="glass-card p-8 rounded-xl mb-8 bento-card">
+            <h3 className="text-xl font-semibold mb-4 gradient-text">
               Ideal Customer:
             </h3>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-gray-300">
               <li>• Company size: 10-100 employees</li>
               <li>• Revenue: $1M-$20M</li>
               <li>• Data scattered across 3+ tools</li>
@@ -395,11 +415,11 @@ export default function Home() {
             </ul>
           </div>
 
-          <div className="bg-white p-8 rounded-lg border border-gray-200">
-            <h3 className="text-xl font-semibold mb-4 text-gray-900">
+          <div className="glass-card p-8 rounded-xl bento-card">
+            <h3 className="text-xl font-semibold mb-4 gradient-text">
               Perfect for:
             </h3>
-            <ul className="space-y-2 text-gray-700">
+            <ul className="space-y-2 text-gray-300">
               <li>
                 • E-commerce brands drowning in Shopify/Stripe data
               </li>
@@ -418,9 +438,9 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16">
+      <section className="py-16 relative">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
             FAQ
           </h2>
 
@@ -450,35 +470,40 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="bg-blue-600 py-16">
+      <section className="py-16 relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">
-            Ready to Stop Hunting for Data?
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Book a 30-minute discovery call. We'll discuss your specific needs
-            and show you what's possible.
-          </p>
+          <div className="glass-card gradient-border p-12 rounded-2xl relative overflow-hidden">
+            {/* Glow effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10"></div>
 
-          <a
-            href="https://cal.com/arnaldodelisio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors shadow-lg"
-          >
-            Schedule Your Free Strategy Call →
-          </a>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white relative">
+              Ready to Stop Hunting for Data?
+            </h2>
+            <p className="text-xl text-gray-300 mb-8 relative">
+              Book a 30-minute discovery call. We'll discuss your specific needs
+              and show you what's possible.
+            </p>
 
-          <p className="text-sm text-blue-100 mt-4">
-            No commitment • 30 minutes • Free consultation
-          </p>
+            <a
+              href="https://cal.com/arnaldodelisio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button relative"
+            >
+              Schedule Your Free Strategy Call →
+            </a>
+
+            <p className="text-sm text-gray-400 mt-4 relative">
+              No commitment • 30 minutes • Free consultation
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-gray-400 py-8">
+      <footer className="border-t border-white/10 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p>&copy; 2026 Natural Language Intelligence. All rights reserved.</p>
+          <p className="text-gray-500">&copy; 2026 Natural Language Intelligence. All rights reserved.</p>
         </div>
       </footer>
     </div>
@@ -494,12 +519,12 @@ function ExampleCard({
   examples: string[];
 }) {
   return (
-    <div className="bg-white p-6 rounded-lg border border-gray-200">
-      <h3 className="text-xl font-semibold mb-4 text-gray-900">{title}</h3>
-      <ul className="space-y-2">
+    <div className="glass-card p-6 rounded-xl bento-card group">
+      <h3 className="text-xl font-semibold mb-4 gradient-text">{title}</h3>
+      <ul className="space-y-3">
         {examples.map((example, index) => (
-          <li key={index} className="flex items-start text-gray-700">
-            <span className="text-blue-600 mr-2">•</span>
+          <li key={index} className="flex items-start text-gray-300 group-hover:text-white transition-colors">
+            <span className="text-orange-400 mr-2">→</span>
             <span>&quot;{example}&quot;</span>
           </li>
         ))}
@@ -519,12 +544,12 @@ function StepCard({
   description: string;
 }) {
   return (
-    <div className="text-center">
-      <div className="inline-flex items-center justify-center w-12 h-12 bg-blue-600 text-white text-xl font-bold rounded-full mb-4">
+    <div className="text-center group">
+      <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-400 text-white text-xl font-bold rounded-full mb-4 glow-pulse group-hover:scale-110 transition-transform">
         {number}
       </div>
-      <h3 className="text-lg font-semibold mb-2 text-gray-900">{title}</h3>
-      <p className="text-gray-600">{description}</p>
+      <h3 className="text-lg font-semibold mb-2 text-white">{title}</h3>
+      <p className="text-gray-400">{description}</p>
     </div>
   );
 }
@@ -532,9 +557,9 @@ function StepCard({
 // Component: Benefit Item
 function BenefitItem({ text }: { text: string }) {
   return (
-    <li className="flex items-start text-lg text-gray-700">
-      <span className="text-green-500 text-2xl mr-3">✓</span>
-      <span>{text}</span>
+    <li className="flex items-start text-lg text-gray-300 glass-card p-4 rounded-lg group hover:border-orange-400/50 transition-all">
+      <span className="text-green-400 text-2xl mr-3">✓</span>
+      <span className="group-hover:text-white transition-colors">{text}</span>
     </li>
   );
 }
@@ -548,9 +573,9 @@ function FAQItem({
   answer: string;
 }) {
   return (
-    <div className="bg-gray-50 p-6 rounded-lg">
-      <h3 className="text-lg font-semibold mb-2 text-gray-900">{question}</h3>
-      <p className="text-gray-700">{answer}</p>
+    <div className="glass-card p-6 rounded-xl group hover:border-orange-400/50 transition-all">
+      <h3 className="text-lg font-semibold mb-2 text-white">{question}</h3>
+      <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{answer}</p>
     </div>
   );
 }

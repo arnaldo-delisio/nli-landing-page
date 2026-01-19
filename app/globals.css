@@ -3,23 +3,130 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2563eb;
-  --secondary: #10b981;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary: #3b82f6;
-    --secondary: #34d399;
-  }
+  --primary: #f97316;
+  --secondary: #fb923c;
+  --accent: #ea580c;
+  --glow: #f97316;
 }
 
 body {
-  color: #1f2937;
-  background: #ffffff;
+  color: #ffffff;
+  background: #0a0a0f;
 }
 
+/* Gradient mesh background */
+.gradient-mesh {
+  background: radial-gradient(at 0% 0%, rgba(249, 115, 22, 0.15) 0px, transparent 50%),
+              radial-gradient(at 100% 0%, rgba(251, 146, 60, 0.15) 0px, transparent 50%),
+              radial-gradient(at 100% 100%, rgba(234, 88, 12, 0.15) 0px, transparent 50%),
+              radial-gradient(at 0% 100%, rgba(249, 115, 22, 0.15) 0px, transparent 50%);
+  background-color: #0a0a0f;
+}
+
+/* Glassmorphism card */
+.glass-card {
+  background: rgba(17, 17, 27, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card:hover {
+  border-color: rgba(249, 115, 22, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(249, 115, 22, 0.2);
+}
+
+/* Neon glow button */
+.neon-button {
+  position: relative;
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.5),
+              0 0 40px rgba(249, 115, 22, 0.3),
+              inset 0 0 10px rgba(249, 115, 22, 0.2);
+  transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+  box-shadow: 0 0 30px rgba(249, 115, 22, 0.8),
+              0 0 60px rgba(249, 115, 22, 0.5),
+              inset 0 0 15px rgba(249, 115, 22, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Rotating word with gradient */
 .rotating-word {
-  color: var(--primary);
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 700;
+  display: inline-block;
+}
+
+/* Gradient border effect */
+.gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(251, 146, 60, 0.1));
+  border: 1px solid transparent;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, #f97316, #fb923c, #fdba74);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0.5;
+}
+
+.gradient-border:hover::before {
+  opacity: 1;
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Glow pulse animation */
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(249, 115, 22, 0.8), 0 0 60px rgba(251, 146, 60, 0.4);
+  }
+}
+
+.glow-pulse {
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+/* Bento grid hover effect */
+.bento-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bento-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #f97316 0%, #fb923c 50%, #fdba74 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
