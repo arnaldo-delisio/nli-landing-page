@@ -53,15 +53,11 @@ export default function Home() {
         </h1>
 
         {/* Subheadline */}
-        <h2 className="text-2xl md:text-3xl font-semibold mb-4 text-gray-300">
-          Stop switching between tools. Start asking questions.
+        <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-300 max-w-4xl mx-auto">
+          Ask questions in plain English.<br />
+          Get answers in seconds.<br />
+          <span className="text-gray-400 text-xl mt-2 block">No dashboards. No SQL. No 30-minute data hunts.</span>
         </h2>
-
-        {/* Description */}
-        <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-8">
-          Get instant answers from all your business systems through natural
-          conversation—no dashboards, no SQL, no waiting.
-        </p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
@@ -147,93 +143,80 @@ export default function Home() {
       </section>
 
       {/* The Problem Section */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
-            The Problem
-          </h2>
-
-          <div className="max-w-3xl mx-auto">
-            <p className="text-lg text-gray-300 mb-6">
-              Your business data is scattered across:
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">
+              The Problem
             </p>
 
-            <ul className="space-y-2 mb-8 text-gray-300">
-              <li className="flex items-start">
-                <span className="text-orange-400 mr-2">•</span>
-                Stripe (payments & revenue)
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-400 mr-2">•</span>
-                Salesforce/HubSpot (CRM & deals)
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-400 mr-2">•</span>
-                Shopify/databases (products & orders)
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-400 mr-2">•</span>
-                Google Analytics (traffic & behavior)
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-400 mr-2">•</span>
-                Notion/Airtable (operations)
-              </li>
-              <li className="flex items-start">
-                <span className="text-orange-400 mr-2">•</span>
-                Spreadsheets (everything else)
-              </li>
-            </ul>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+              "What's our revenue this month?"
+            </h2>
 
-            <div className="glass-card p-6 rounded-lg mb-6">
-              <p className="text-gray-300 mb-4">
-                Every time you need an answer, you:
-              </p>
-              <ol className="space-y-2 text-gray-300">
-                <li>1. Open 3-5 different tools</li>
-                <li>2. Export data to spreadsheets</li>
-                <li>3. Manually combine and analyze</li>
-                <li>4. 15-30 minutes later... maybe get an answer</li>
-              </ol>
+            <p className="text-2xl text-gray-300 mb-12">
+              Simple question. 30 minutes to answer.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+              <div className="glass-card p-8 rounded-xl text-center bento-card">
+                <div className="text-5xl font-bold gradient-text mb-2">6+</div>
+                <p className="text-gray-400">Different tools<br />with your data</p>
+              </div>
+              <div className="glass-card p-8 rounded-xl text-center bento-card">
+                <div className="text-5xl font-bold gradient-text mb-2">20x</div>
+                <p className="text-gray-400">Questions asked<br />per day</p>
+              </div>
+              <div className="glass-card p-8 rounded-xl text-center bento-card">
+                <div className="text-5xl font-bold gradient-text mb-2">3-5hrs</div>
+                <p className="text-gray-400">Wasted daily<br />hunting data</p>
+              </div>
             </div>
 
-            <p className="text-lg text-gray-300 mb-2">
-              You do this <strong className="text-white">10-20 times per day</strong>.
-            </p>
-            <p className="text-2xl font-bold gradient-text">
-              That's 3-5 hours wasted. Every single day.
+            <p className="text-xl text-gray-400">
+              You're not building your business.<br />
+              <span className="text-white font-semibold">You're building spreadsheets.</span>
             </p>
           </div>
         </div>
       </section>
 
       {/* The Solution Section */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-white">
-            The Solution
-          </h2>
-          <p className="text-xl text-center text-gray-300 mb-12">
-            Natural Language Intelligence for your business.
-          </p>
+          <div className="max-w-4xl mx-auto text-center mb-16">
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">
+              The Solution
+            </p>
 
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              <div className="glass-card p-6 rounded-xl bento-card">
-                <div className="text-4xl mb-4">🔗</div>
-                <p className="text-gray-300">
-                  We connect Claude Desktop to all your systems.
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
+              One interface.<br />
+              All your answers.
+            </h2>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="glass-card p-8 rounded-xl bento-card text-center">
+                <div className="text-5xl mb-4">🔗</div>
+                <h3 className="text-xl font-bold text-white mb-2">Connect</h3>
+                <p className="text-gray-400">
+                  Stripe. Shopify. CRM.<br />All your tools.
                 </p>
               </div>
-              <div className="glass-card p-6 rounded-xl bento-card">
-                <div className="text-4xl mb-4">💬</div>
-                <p className="text-gray-300">
-                  You ask questions in plain English.
+              <div className="glass-card p-8 rounded-xl bento-card text-center">
+                <div className="text-5xl mb-4">💬</div>
+                <h3 className="text-xl font-bold text-white mb-2">Ask</h3>
+                <p className="text-gray-400">
+                  Plain English.<br />No SQL required.
                 </p>
               </div>
-              <div className="glass-card p-6 rounded-xl bento-card">
-                <div className="text-4xl mb-4">⚡</div>
-                <p className="text-gray-300">You get instant answers.</p>
+              <div className="glass-card p-8 rounded-xl bento-card text-center">
+                <div className="text-5xl mb-4">⚡</div>
+                <h3 className="text-xl font-bold text-white mb-2">Get Answers</h3>
+                <p className="text-gray-400">
+                  Seconds, not hours.<br />Always accurate.
+                </p>
               </div>
             </div>
           </div>
@@ -241,260 +224,281 @@ export default function Home() {
       </section>
 
       {/* Examples Section - Bento Grid */}
-      <section id="examples" className="py-16 relative">
+      <section id="examples" className="py-20 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
-            Ask Anything
-          </h2>
+          <div className="text-center mb-12">
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">
+              Real Questions. Real Answers.
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Just ask.
+            </h2>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <ExampleCard
-              title="Sales Intelligence"
-              examples={[
-                "Which deals are stuck in demo for over 2 weeks?",
-                "Show me our sales velocity this quarter vs last",
-                "Who are our highest-value customers?",
-              ]}
-            />
-            <ExampleCard
-              title="Operations Intelligence"
-              examples={[
-                "Which projects are over budget and behind schedule?",
-                "Show me team capacity across all active projects",
-                "What's blocking our Q1 launch?",
-              ]}
-            />
-            <ExampleCard
-              title="E-commerce Intelligence"
-              examples={[
-                "What's our revenue this month?",
-                "Which products have the best margins?",
-                "Show me customer cohort retention",
-              ]}
-            />
-            <ExampleCard
-              title="Marketing Intelligence"
-              examples={[
-                "What's our CAC by channel?",
-                "Which campaigns drove the most revenue?",
-                "Show me conversion rates by traffic source",
-              ]}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            <div className="glass-card p-8 rounded-xl bento-card">
+              <div className="gradient-text text-sm font-bold mb-4 uppercase tracking-wider">Sales</div>
+              <p className="text-gray-300 text-lg mb-3">
+                "Which deals are stuck for 2+ weeks?"
+              </p>
+              <p className="text-gray-300 text-lg mb-3">
+                "Show me our close rate vs last quarter"
+              </p>
+              <p className="text-gray-300 text-lg">
+                "Who are our top 10 customers?"
+              </p>
+            </div>
+
+            <div className="glass-card p-8 rounded-xl bento-card">
+              <div className="gradient-text text-sm font-bold mb-4 uppercase tracking-wider">Revenue</div>
+              <p className="text-gray-300 text-lg mb-3">
+                "What's our MRR growth this month?"
+              </p>
+              <p className="text-gray-300 text-lg mb-3">
+                "Which products have best margins?"
+              </p>
+              <p className="text-gray-300 text-lg">
+                "Show me customer retention by cohort"
+              </p>
+            </div>
+
+            <div className="glass-card p-8 rounded-xl bento-card">
+              <div className="gradient-text text-sm font-bold mb-4 uppercase tracking-wider">Operations</div>
+              <p className="text-gray-300 text-lg mb-3">
+                "Which projects are over budget?"
+              </p>
+              <p className="text-gray-300 text-lg mb-3">
+                "Show me team capacity this week"
+              </p>
+              <p className="text-gray-300 text-lg">
+                "What's blocking our Q1 launch?"
+              </p>
+            </div>
+
+            <div className="glass-card p-8 rounded-xl bento-card">
+              <div className="gradient-text text-sm font-bold mb-4 uppercase tracking-wider">Marketing</div>
+              <p className="text-gray-300 text-lg mb-3">
+                "What's our CAC by channel?"
+              </p>
+              <p className="text-gray-300 text-lg mb-3">
+                "Which campaigns drove revenue?"
+              </p>
+              <p className="text-gray-300 text-lg">
+                "Show me conversion by traffic source"
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
-            How It Works
-          </h2>
+          <div className="text-center mb-12">
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">
+              How It Works
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+              Live in 2 weeks
+            </h2>
+          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
             <StepCard
               number="1"
-              title="Discovery Call"
-              description="We understand your business, your tools, your questions"
+              title="Discovery"
+              description="30-min call. We map your data sources."
             />
             <StepCard
               number="2"
-              title="Custom Integration"
-              description="We connect your systems and build your intelligence layer (1-2 weeks)"
+              title="Build"
+              description="We connect everything. 1-2 weeks."
             />
             <StepCard
               number="3"
-              title="Install & Train"
-              description="We set up Claude Desktop integration and train your team"
+              title="Deploy"
+              description="Install Claude Desktop. Train your team."
             />
             <StepCard
               number="4"
-              title="Start Asking"
-              description="Your entire team gets instant answers from all your data"
+              title="Ask Away"
+              description="Instant answers. All day. Every day."
             />
           </div>
         </div>
       </section>
 
       {/* What You Get Section */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
-            What You Get
-          </h2>
+          <div className="text-center mb-12">
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">
+              What's Included
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Everything you need
+            </h2>
+          </div>
 
-          <ul className="space-y-4">
-            <BenefitItem text="Custom orchestration backend for your business" />
-            <BenefitItem text="3-5 data sources connected (CRM, payments, analytics, etc.)" />
-            <BenefitItem text="Domain-specific intelligence (we understand your metrics)" />
-            <BenefitItem text="Claude Desktop integration (familiar interface)" />
-            <BenefitItem text="Team training & documentation" />
-            <BenefitItem text="30 days of support" />
-          </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <BenefitItem text="Custom backend built for your business" />
+            <BenefitItem text="3-5 data sources connected" />
+            <BenefitItem text="Domain intelligence included" />
+            <BenefitItem text="Claude Desktop integration" />
+            <BenefitItem text="Team training & docs" />
+            <BenefitItem text="30 days support" />
+          </div>
         </div>
       </section>
 
       {/* Pricing Section */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Pilot Program
-          </h2>
-
-          <div className="glass-card gradient-border p-8 rounded-2xl mb-8 relative overflow-hidden">
+          <div className="glass-card gradient-border p-12 rounded-2xl relative overflow-hidden">
             {/* Glow effect background */}
             <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10"></div>
 
             {/* Urgency badge */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
               <span className="inline-block px-6 py-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-sm font-bold rounded-full shadow-lg glow-pulse">
-                ⚡ Only 3 spots remaining
+                ⚡ Only 3 spots left
               </span>
             </div>
 
-            <div className="mb-4 mt-4 relative">
-              <span className="inline-block px-4 py-2 glass-card text-orange-300 text-sm font-semibold rounded-full mb-4">
-                Pilot Program (First 5 Clients)
+            <div className="mb-2 mt-4 relative">
+              <span className="text-orange-300 text-sm font-semibold uppercase tracking-wider">
+                Pilot Program
               </span>
             </div>
 
-            <div className="text-5xl md:text-6xl font-bold text-white mb-4 relative">
+            <div className="text-6xl md:text-7xl font-bold text-white mb-2 relative">
               $5,000
-              <span className="text-2xl font-normal text-gray-400">
-                {" "}
-                one-time
-              </span>
             </div>
 
-            {/* Add value comparison */}
-            <p className="text-sm text-gray-500 line-through mb-6 relative">
-              Regular price: $15,000
+            <p className="text-gray-500 line-through mb-8 relative">
+              Regular: $15,000
             </p>
 
-            <p className="text-lg text-gray-300 mb-8 relative">
-              ✓ Delivered in 1-2 weeks
-              <br />
-              ✓ No recurring costs
-              <br />
-              ✓ Full ownership of your backend
-              <br />✓ 30 days of support included
-            </p>
+            <div className="flex flex-wrap justify-center gap-6 mb-8 relative text-gray-300">
+              <div>✓ 1-2 week delivery</div>
+              <div>✓ No recurring fees</div>
+              <div>✓ You own it</div>
+              <div>✓ 30 days support</div>
+            </div>
 
             <a
               href="https://cal.com/arnaldodelisio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button relative"
+              className="inline-block px-10 py-5 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-bold text-lg rounded-lg neon-button relative"
             >
               Claim Your Spot →
             </a>
 
-            <p className="text-xs text-gray-400 mt-4 relative">
-              🔥 2 pilot clients already onboarded
+            <p className="text-sm text-gray-400 mt-6 relative">
+              🔥 2 companies already onboarded
             </p>
           </div>
         </div>
       </section>
 
       {/* Who This Is For Section */}
-      <section className="py-16 relative">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">
-            Who This Is For
-          </h2>
-
-          <div className="glass-card p-8 rounded-xl mb-8 bento-card">
-            <h3 className="text-xl font-semibold mb-4 gradient-text">
-              Ideal Customer:
-            </h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>• Company size: 10-100 employees</li>
-              <li>• Revenue: $1M-$20M</li>
-              <li>• Data scattered across 3+ tools</li>
-              <li>• Decision makers tired of dashboard paralysis</li>
-            </ul>
+      <section className="py-20 relative">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">
+              Is This You?
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Built for operators
+            </h2>
           </div>
 
-          <div className="glass-card p-8 rounded-xl bento-card">
-            <h3 className="text-xl font-semibold mb-4 gradient-text">
-              Perfect for:
-            </h3>
-            <ul className="space-y-2 text-gray-300">
-              <li>
-                • E-commerce brands drowning in Shopify/Stripe data
-              </li>
-              <li>• SaaS companies needing operational visibility</li>
-              <li>• Agencies managing multiple client systems</li>
-              <li>
-                • Professional services tracking projects & revenue
-              </li>
-              <li>
-                • Any business where &quot;just checking the numbers&quot; takes 30
-                minutes
-              </li>
-            </ul>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="glass-card p-8 rounded-xl bento-card">
+              <h3 className="text-xl font-bold gradient-text mb-6">
+                Company Profile
+              </h3>
+              <div className="space-y-3 text-gray-300 text-lg">
+                <p>10-100 employees</p>
+                <p>$1M-$20M revenue</p>
+                <p>Data in 3+ systems</p>
+                <p>Tired of dashboard hell</p>
+              </div>
+            </div>
+
+            <div className="glass-card p-8 rounded-xl bento-card">
+              <h3 className="text-xl font-bold gradient-text mb-6">
+                You're a fit if:
+              </h3>
+              <div className="space-y-3 text-gray-300 text-lg">
+                <p>E-commerce / DTC brand</p>
+                <p>B2B SaaS company</p>
+                <p>Agency or services firm</p>
+                <p>"Checking the numbers" = 30 min</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">
-            FAQ
-          </h2>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-white">
+              Questions?
+            </h2>
+          </div>
 
-          <div className="space-y-6">
-            <FAQItem
-              question="What if we don't use Claude Desktop?"
-              answer="We include setup help. Takes 5 minutes to install."
-            />
+          <div className="space-y-4">
             <FAQItem
               question="Is our data secure?"
-              answer="Your backend runs on your infrastructure. Data never leaves your control."
+              answer="Yes. Your backend runs on your infrastructure. We never see your data."
             />
             <FAQItem
-              question="What data sources do you support?"
-              answer="Stripe, Shopify, Salesforce, HubSpot, PostgreSQL, Supabase, Airtable, Google Analytics, and more. We build custom connectors as needed."
+              question="What tools can you connect?"
+              answer="Stripe, Shopify, Salesforce, HubSpot, PostgreSQL, Airtable, Google Analytics. Custom connectors on request."
             />
             <FAQItem
-              question="How is this different from Tableau/Power BI?"
-              answer="No dashboards to build. No SQL to learn. 1-2 week setup vs 3-6 months. Natural language, not clicking through pre-built reports."
+              question="How is this different from Tableau?"
+              answer="No dashboards. No SQL. Ask questions, get answers. 1-2 weeks vs 3-6 months."
             />
             <FAQItem
-              question="What if our question isn't pre-programmed?"
-              answer="Our domain intelligence layer understands business contexts. Claude can reason about your data and answer novel questions."
+              question="Can it answer unprogrammed questions?"
+              answer="Yes. Claude reasons about your data. Not just pre-built queries."
             />
           </div>
         </div>
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 relative">
+      <section className="py-20 relative">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <div className="glass-card gradient-border p-12 rounded-2xl relative overflow-hidden">
             {/* Glow effect */}
             <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10"></div>
 
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white relative">
-              Ready to Stop Hunting for Data?
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white relative leading-tight">
+              Stop hunting.<br />
+              Start asking.
             </h2>
+
             <p className="text-xl text-gray-300 mb-8 relative">
-              Book a 30-minute discovery call. We'll discuss your specific needs
-              and show you what's possible.
+              30-minute call. See if we're a fit.
             </p>
 
             <a
               href="https://cal.com/arnaldodelisio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button relative"
+              className="inline-block px-10 py-5 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-bold text-lg rounded-lg neon-button relative"
             >
-              Schedule Your Free Strategy Call →
+              Book Discovery Call →
             </a>
 
-            <p className="text-sm text-gray-400 mt-4 relative">
-              No commitment • 30 minutes • Free consultation
+            <p className="text-sm text-gray-400 mt-6 relative">
+              Free • No commitment • 30 minutes
             </p>
           </div>
         </div>
@@ -510,28 +514,6 @@ export default function Home() {
   );
 }
 
-// Component: Example Card
-function ExampleCard({
-  title,
-  examples,
-}: {
-  title: string;
-  examples: string[];
-}) {
-  return (
-    <div className="glass-card p-6 rounded-xl bento-card group">
-      <h3 className="text-xl font-semibold mb-4 gradient-text">{title}</h3>
-      <ul className="space-y-3">
-        {examples.map((example, index) => (
-          <li key={index} className="flex items-start text-gray-300 group-hover:text-white transition-colors">
-            <span className="text-orange-400 mr-2">→</span>
-            <span>&quot;{example}&quot;</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
 
 // Component: Step Card
 function StepCard({
@@ -557,10 +539,10 @@ function StepCard({
 // Component: Benefit Item
 function BenefitItem({ text }: { text: string }) {
   return (
-    <li className="flex items-start text-lg text-gray-300 glass-card p-4 rounded-lg group hover:border-orange-400/50 transition-all">
-      <span className="text-green-400 text-2xl mr-3">✓</span>
-      <span className="group-hover:text-white transition-colors">{text}</span>
-    </li>
+    <div className="glass-card p-6 rounded-xl bento-card group text-center">
+      <span className="text-green-400 text-3xl block mb-3">✓</span>
+      <span className="text-gray-300 group-hover:text-white transition-colors text-lg">{text}</span>
+    </div>
   );
 }
 
