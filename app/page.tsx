@@ -37,12 +37,12 @@ export default function Home() {
           {/* Badge */}
           <div className="inline-block mb-8 px-5 py-2 glass-card rounded-full">
             <span className="gradient-text text-sm font-medium tracking-wide">
-              Natural Language Business Intelligence
+              Natural Language Intelligence
             </span>
           </div>
 
           {/* Main Headline with Rotating Word */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 pb-2 text-white" style={{ lineHeight: '1.3' }}>
             Talk with your{" "}
             <span
               className={`rotating-word transition-opacity duration-300 ${
