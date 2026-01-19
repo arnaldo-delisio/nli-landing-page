@@ -133,28 +133,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Bar - Social Proof */}
-      <section className="py-8 border-y border-white/10">
-        <div className="max-w-6xl mx-auto px-4">
-          <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-wide">
-            Trusted by forward-thinking operators
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-            <div className="text-gray-300 font-semibold text-lg">
-              Early-stage pilot companies
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <span className="text-2xl">⚡</span>
-              <span className="font-medium">Fast implementation</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-300">
-              <span className="text-2xl">🔒</span>
-              <span className="font-medium">Secure by design</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* The Problem Section */}
       <section className="py-20 relative">
         <div className="max-w-6xl mx-auto px-4">
