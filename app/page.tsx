@@ -31,89 +31,91 @@ export default function Home() {
 
   return (
     <div className="min-h-screen gradient-mesh">
-      {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 py-20 text-center relative overflow-hidden">
-        {/* Badge */}
-        <div className="inline-block mb-6 px-5 py-2 glass-card rounded-full">
-          <span className="gradient-text text-sm font-medium tracking-wide">
-            Natural Language Business Intelligence
-          </span>
-        </div>
-
-        {/* Main Headline with Rotating Word */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
-          Talk with your{" "}
-          <span
-            className={`rotating-word transition-opacity duration-300 ${
-              isVisible ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {ROTATING_WORDS[wordIndex]}
-          </span>
-        </h1>
-
-        {/* Subheadline */}
-        <h2 className="text-2xl md:text-3xl font-semibold mb-8 text-gray-300 max-w-4xl mx-auto">
-          Ask questions in plain English.<br />
-          Get answers in seconds.<br />
-          <span className="text-gray-400 text-xl mt-2 block">No dashboards. No SQL. No 30-minute data hunts.</span>
-        </h2>
-
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
-          <a
-            href="https://cal.com/arnaldodelisio/discovery"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button"
-          >
-            Book Your Discovery Call (30 min) →
-          </a>
-          <a
-            href="#examples"
-            className="px-8 py-4 glass-card text-white font-semibold rounded-lg border border-white/20 hover:border-orange-400/50 transition-all"
-          >
-            See Examples
-          </a>
-        </div>
-
-        {/* Friction-reducing copy under CTA */}
-        <p className="text-sm text-gray-400">
-          No commitment • Free consultation • See if NLI is right for you
-        </p>
-
-        {/* Trust signals under CTA */}
-        <div className="flex flex-wrap justify-center items-center gap-6 mt-8 text-sm text-gray-400">
-          <div className="flex items-center glass-card px-4 py-2 rounded-full">
-            <span className="text-green-400 mr-2">🔒</span>
-            SOC 2 Compliant
+      {/* Hero Section - Full Screen */}
+      <section className="min-h-screen flex flex-col justify-center items-center px-4 py-12 relative overflow-hidden">
+        <div className="max-w-6xl mx-auto w-full text-center">
+          {/* Badge */}
+          <div className="inline-block mb-8 px-5 py-2 glass-card rounded-full">
+            <span className="gradient-text text-sm font-medium tracking-wide">
+              Natural Language Business Intelligence
+            </span>
           </div>
-          <div className="flex items-center glass-card px-4 py-2 rounded-full">
-            <span className="text-green-400 mr-2">✓</span>
-            GDPR Ready
-          </div>
-          <div className="flex items-center glass-card px-4 py-2 rounded-full">
-            <span className="text-green-400 mr-2">🛡️</span>
-            Your infrastructure
-          </div>
-          <div className="flex items-center glass-card px-4 py-2 rounded-full">
-            <span className="text-green-400 mr-2">🔐</span>
-            End-to-end encryption
-          </div>
-        </div>
 
-        {/* Demo Video Placeholder */}
-        <div className="max-w-4xl mx-auto mt-12">
-          <div className="glass-card rounded-2xl overflow-hidden aspect-video relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10 flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform cursor-pointer shadow-lg">
-                  <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                  </svg>
+          {/* Main Headline with Rotating Word */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+            Talk with your{" "}
+            <span
+              className={`rotating-word transition-opacity duration-300 ${
+                isVisible ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              {ROTATING_WORDS[wordIndex]}
+            </span>
+          </h1>
+
+          {/* Subheadline */}
+          <h2 className="text-2xl md:text-3xl font-semibold mb-12 text-gray-300 max-w-4xl mx-auto">
+            Ask questions in plain English.<br />
+            Get answers in seconds.<br />
+            <span className="text-gray-400 text-xl mt-2 block">No dashboards. No SQL. No 30-minute data hunts.</span>
+          </h2>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <a
+              href="https://cal.com/arnaldodelisio/discovery"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button"
+            >
+              Book Your Discovery Call (30 min) →
+            </a>
+            <a
+              href="#examples"
+              className="px-8 py-4 glass-card text-white font-semibold rounded-lg border border-white/20 hover:border-orange-400/50 transition-all"
+            >
+              See Examples
+            </a>
+          </div>
+
+          {/* Friction-reducing copy under CTA */}
+          <p className="text-sm text-gray-400 mb-10">
+            No commitment • Free consultation • See if NLI is right for you
+          </p>
+
+          {/* Trust signals under CTA */}
+          <div className="flex flex-wrap justify-center items-center gap-4 mb-12 text-sm text-gray-400">
+            <div className="flex items-center glass-card px-4 py-2 rounded-full">
+              <span className="text-green-400 mr-2">🔒</span>
+              SOC 2 Compliant
+            </div>
+            <div className="flex items-center glass-card px-4 py-2 rounded-full">
+              <span className="text-green-400 mr-2">✓</span>
+              GDPR Ready
+            </div>
+            <div className="flex items-center glass-card px-4 py-2 rounded-full">
+              <span className="text-green-400 mr-2">🛡️</span>
+              Your infrastructure
+            </div>
+            <div className="flex items-center glass-card px-4 py-2 rounded-full">
+              <span className="text-green-400 mr-2">🔐</span>
+              End-to-end encryption
+            </div>
+          </div>
+
+          {/* Demo Video Placeholder */}
+          <div className="max-w-4xl mx-auto">
+            <div className="glass-card rounded-2xl overflow-hidden aspect-video relative group">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform cursor-pointer shadow-lg">
+                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                    </svg>
+                  </div>
+                  <p className="text-gray-400 text-lg font-medium">Watch 90-second demo</p>
+                  <p className="text-gray-500 text-sm mt-2">See NLI in action</p>
                 </div>
-                <p className="text-gray-400 text-lg font-medium">Watch 90-second demo</p>
-                <p className="text-gray-500 text-sm mt-2">See NLI in action</p>
               </div>
             </div>
           </div>
