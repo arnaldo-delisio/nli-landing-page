@@ -42,12 +42,11 @@ export default function Home() {
           </div>
 
           {/* Main Headline with Rotating Word */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 pb-2 text-white" style={{ lineHeight: '1.3' }}>
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 pb-2 text-white" style={{ lineHeight: '1.3' }}>
             Talk with your{" "}
             <span
-              className={`rotating-word transition-opacity duration-300 ${
-                isVisible ? "opacity-100" : "opacity-0"
-              }`}
+              className={`rotating-word transition-opacity duration-300 ${isVisible ? "opacity-100" : "opacity-0"
+                }`}
             >
               {ROTATING_WORDS[wordIndex]}
             </span>
@@ -61,7 +60,7 @@ export default function Home() {
           </h2>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-2">
             <a
               href="https://cal.com/arnaldodelisio/discovery"
               target="_blank"
