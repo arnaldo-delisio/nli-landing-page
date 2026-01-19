@@ -40,10 +40,16 @@ export default function Home() {
           </span>
         </div>
 
-        {/* Main Headline */}
+        {/* Main Headline with Rotating Word */}
         <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-          Get instant answers from <br />
-          <span className="text-blue-600">all your business data</span>
+          Talk with your{" "}
+          <span
+            className={`text-blue-600 transition-opacity duration-300 ${
+              isVisible ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {ROTATING_WORDS[wordIndex]}
+          </span>
         </h1>
 
         {/* Subheadline */}
