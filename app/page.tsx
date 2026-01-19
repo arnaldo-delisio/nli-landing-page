@@ -32,8 +32,8 @@ export default function Home() {
   return (
     <div className="min-h-screen gradient-mesh">
       {/* Hero Section - Full Screen */}
-      <section className="min-h-screen flex flex-col justify-center items-center px-4 py-12 relative overflow-hidden">
-        <div className="max-w-6xl mx-auto w-full text-center">
+      <section className="min-h-screen flex flex-col justify-center items-center px-4 text-center relative">
+        <div className="max-w-5xl mx-auto">
           {/* Badge */}
           <div className="inline-block mb-8 px-5 py-2 glass-card rounded-full">
             <span className="gradient-text text-sm font-medium tracking-wide">
@@ -42,7 +42,7 @@ export default function Home() {
           </div>
 
           {/* Main Headline with Rotating Word */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 text-white leading-tight">
             Talk with your{" "}
             <span
               className={`rotating-word transition-opacity duration-300 ${
@@ -84,7 +84,7 @@ export default function Home() {
           </p>
 
           {/* Trust signals under CTA */}
-          <div className="flex flex-wrap justify-center items-center gap-4 mb-12 text-sm text-gray-400">
+          <div className="flex flex-wrap justify-center items-center gap-6 text-sm text-gray-400">
             <div className="flex items-center glass-card px-4 py-2 rounded-full">
               <span className="text-green-400 mr-2">🔒</span>
               SOC 2 Compliant
@@ -102,20 +102,31 @@ export default function Home() {
               End-to-end encryption
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* Demo Video Placeholder */}
-          <div className="max-w-4xl mx-auto">
-            <div className="glass-card rounded-2xl overflow-hidden aspect-video relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10 flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-20 h-20 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform cursor-pointer shadow-lg">
-                    <svg className="w-8 h-8 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
-                    </svg>
-                  </div>
-                  <p className="text-gray-400 text-lg font-medium">Watch 90-second demo</p>
-                  <p className="text-gray-500 text-sm mt-2">See NLI in action</p>
+      {/* Demo Video Section - Separate */}
+      <section className="py-20 relative border-t border-white/5">
+        <div className="max-w-5xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <p className="text-gray-400 mb-4 uppercase tracking-wider text-sm">
+              See It In Action
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              90 seconds to understand
+            </h2>
+          </div>
+
+          <div className="glass-card rounded-2xl overflow-hidden aspect-video relative group">
+            <div className="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-orange-400/10 to-amber-400/10 flex items-center justify-center">
+              <div className="text-center">
+                <div className="w-24 h-24 bg-gradient-to-r from-orange-500 to-amber-400 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform cursor-pointer shadow-lg">
+                  <svg className="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z" />
+                  </svg>
                 </div>
+                <p className="text-gray-300 text-xl font-medium">Watch the demo</p>
+                <p className="text-gray-500 text-sm mt-2">See how NLI works</p>
               </div>
             </div>
           </div>
