@@ -40,16 +40,10 @@ export default function Home() {
           </span>
         </div>
 
-        {/* Main Headline with Rotating Word */}
+        {/* Main Headline */}
         <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-          Talk with your{" "}
-          <span
-            className={`rotating-word transition-opacity duration-300 ${
-              isVisible ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            {ROTATING_WORDS[wordIndex]}
-          </span>
+          Get instant answers from <br />
+          <span className="text-blue-600">all your business data</span>
         </h1>
 
         {/* Subheadline */}
@@ -64,21 +58,68 @@ export default function Home() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#demo"
-            className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
-          >
-            Watch Demo
-          </a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
           <a
             href="https://cal.com/arnaldodelisio"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
+          >
+            Book Your Discovery Call (30 min) →
+          </a>
+          <a
+            href="#examples"
             className="px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg border-2 border-blue-600 hover:bg-blue-50 transition-colors"
           >
-            Book Discovery Call
+            See Examples
           </a>
+        </div>
+
+        {/* Friction-reducing copy under CTA */}
+        <p className="text-sm text-gray-600">
+          No commitment • Free consultation • See if NLI is right for you
+        </p>
+
+        {/* Trust signals under CTA */}
+        <div className="flex flex-wrap justify-center items-center gap-6 mt-8 text-sm text-gray-600">
+          <div className="flex items-center">
+            <span className="text-green-500 mr-2">🔒</span>
+            SOC 2 Compliant
+          </div>
+          <div className="flex items-center">
+            <span className="text-green-500 mr-2">✓</span>
+            GDPR Ready
+          </div>
+          <div className="flex items-center">
+            <span className="text-green-500 mr-2">🛡️</span>
+            Your infrastructure
+          </div>
+          <div className="flex items-center">
+            <span className="text-green-500 mr-2">🔐</span>
+            End-to-end encryption
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Bar - Social Proof */}
+      <section className="py-8 border-y border-gray-200 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <p className="text-center text-sm text-gray-500 mb-6 uppercase tracking-wide">
+            Trusted by forward-thinking operators
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+            <div className="text-gray-600 font-semibold text-lg">
+              Early-stage pilot companies
+            </div>
+            <div className="flex items-center gap-2 text-gray-600">
+              <span className="text-2xl">⚡</span>
+              <span className="font-medium">Fast implementation</span>
+            </div>
+            <div className="flex items-center gap-2 text-gray-600">
+              <span className="text-2xl">🔒</span>
+              <span className="font-medium">Secure by design</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -177,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* Examples Section */}
-      <section className="bg-gray-50 py-16">
+      <section id="examples" className="bg-gray-50 py-16">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">
             Examples
@@ -273,10 +314,19 @@ export default function Home() {
       {/* Pricing Section */}
       <section className="py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-gray-900">Pricing</h2>
+          <h2 className="text-3xl font-bold mb-4 text-gray-900">
+            Pilot Program
+          </h2>
 
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-2 border-blue-200 mb-8">
-            <div className="mb-4">
+          <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border-2 border-blue-200 mb-8 relative">
+            {/* Urgency badge */}
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <span className="inline-block px-6 py-2 bg-red-500 text-white text-sm font-bold rounded-full shadow-lg">
+                ⚡ Only 3 spots remaining
+              </span>
+            </div>
+
+            <div className="mb-4 mt-4">
               <span className="inline-block px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-full mb-4">
                 Pilot Program (First 5 Clients)
               </span>
@@ -290,22 +340,32 @@ export default function Home() {
               </span>
             </div>
 
+            {/* Add value comparison */}
+            <p className="text-sm text-gray-600 line-through mb-2">
+              Regular price: $15,000
+            </p>
+
             <p className="text-lg text-gray-700 mb-6">
-              Delivered in 1-2 weeks
+              ✓ Delivered in 1-2 weeks
               <br />
-              No recurring costs
+              ✓ No recurring costs
               <br />
-              Full ownership of your backend
+              ✓ Full ownership of your backend
+              <br />✓ 30 days of support included
             </p>
 
             <a
               href="https://cal.com/arnaldodelisio"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-block px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors shadow-lg"
             >
-              Book Discovery Call
+              Claim Your Spot →
             </a>
+
+            <p className="text-xs text-gray-600 mt-4">
+              🔥 2 pilot clients already onboarded
+            </p>
           </div>
         </div>
       </section>
@@ -398,10 +458,14 @@ export default function Home() {
             href="https://cal.com/arnaldodelisio"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+            className="inline-block px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors shadow-lg"
           >
-            Book Discovery Call
+            Schedule Your Free Strategy Call →
           </a>
+
+          <p className="text-sm text-blue-100 mt-4">
+            No commitment • 30 minutes • Free consultation
+          </p>
         </div>
       </section>
 
