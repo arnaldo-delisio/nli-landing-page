@@ -35,7 +35,7 @@ export default function Home() {
       <section className="max-w-6xl mx-auto px-4 py-20 text-center relative overflow-hidden">
         {/* Badge */}
         <div className="inline-block mb-6 px-5 py-2 glass-card rounded-full glow-pulse">
-          <span className="gradient-text text-sm font-medium tracking-wide uppercase">
+          <span className="gradient-text text-sm font-medium tracking-wide">
             Natural Language Business Intelligence
           </span>
         </div>
@@ -62,7 +62,7 @@ export default function Home() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-4">
           <a
-            href="https://cal.com/arnaldodelisio"
+            href="https://cal.com/arnaldodelisio/discovery"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-semibold rounded-lg neon-button"
@@ -384,7 +384,7 @@ export default function Home() {
             </div>
 
             <a
-              href="https://cal.com/arnaldodelisio"
+              href="https://cal.com/arnaldodelisio/discovery"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-10 py-5 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-bold text-lg rounded-lg neon-button relative z-10"
@@ -486,7 +486,7 @@ export default function Home() {
             </p>
 
             <a
-              href="https://cal.com/arnaldodelisio"
+              href="https://cal.com/arnaldodelisio/discovery"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-10 py-5 bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 text-white font-bold text-lg rounded-lg neon-button relative"
