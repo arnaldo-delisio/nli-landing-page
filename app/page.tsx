@@ -366,8 +366,8 @@ export default function Home() {
 
       {/* Pricing Section */}
       <section className="py-20 relative">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <div className="glass-card p-12 rounded-2xl relative overflow-hidden border border-orange-500/20">
+        <div className="max-w-4xl mx-auto px-4 text-center pt-6">
+          <div className="glass-card p-12 rounded-2xl relative border border-orange-500/20">
             {/* Urgency badge */}
             <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 z-10">
               <span className="inline-block px-6 py-2 bg-gradient-to-r from-red-500 to-orange-500 text-white text-sm font-bold rounded-full shadow-lg glow-pulse">
