@@ -141,7 +141,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
-              "What's our revenue this month?"
+              "Which marketing channels drove the most revenue?"
             </h2>
 
             <p className="text-2xl text-gray-300 mb-12">
